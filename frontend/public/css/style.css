@@ -1,0 +1,95 @@
+/* 全局样式 */
+body {
+    background-color: #f8f9fa;
+}
+
+/* 球号样式 */
+.ball {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.ball.red {
+    background-color: #dc3545;
+}
+
+.ball.blue {
+    background-color: #0d6efd;
+}
+
+/* 开奖结果样式 */
+#latest-result .period {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#latest-result .numbers {
+    margin: 20px 0;
+}
+
+#latest-result .red-balls .ball {
+    margin: 0 8px;
+}
+
+#latest-result .blue-ball .ball {
+    margin-left: 15px;
+}
+
+/* 号码统计样式 */
+#number-stats h6 {
+    margin-top: 15px;
+    color: #333;
+}
+
+#hot-red-balls .ball,
+#hot-blue-balls .ball {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9rem;
+    margin: 3px;
+}
+
+/* 历史记录表格样式 */
+.table th {
+    background-color: #f8f9fa;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .ball {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 0.9rem;
+        margin: 3px;
+    }
+
+    #latest-result .period {
+        font-size: 1rem;
+    }
+
+    .prize-info {
+        font-size: 0.9rem;
+    }
+}
+
+/* 动画效果 */
+.ball {
+    transition: transform 0.2s ease;
+}
+
+.ball:hover {
+    transform: scale(1.1);
+} 

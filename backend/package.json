@@ -1,0 +1,23 @@
+{
+  "name": "caipiao-backend",
+  "version": "1.0.0",
+  "description": "双色球预测系统后端",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "import": "node scripts/importData.js",
+    "verify": "node scripts/verifyData.js"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "mongoose": "6.8.0",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

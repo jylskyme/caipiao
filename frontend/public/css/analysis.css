@@ -1,0 +1,78 @@
+/* 图表容器样式 */
+.card canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+/* 统计表格样式 */
+.table-sm td, 
+.table-sm th {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* 数字特征样式 */
+.list-group-item {
+    padding: 0.5rem 1rem;
+}
+
+.list-group-item span {
+    font-weight: 500;
+    color: #0d6efd;
+}
+
+/* 筛选表单样式 */
+#filter-form label {
+    font-weight: 500;
+    color: #495057;
+}
+
+#filter-form .form-select {
+    cursor: pointer;
+}
+
+#filter-form button {
+    width: 100%;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .card canvas {
+        height: 250px !important;
+    }
+
+    .table-sm td, 
+    .table-sm th {
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+
+    .list-group-item {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* 图表提示框样式 */
+.chart-tooltip {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* 加载动画 */
+.loading {
+    position: relative;
+    min-height: 200px;
+}
+
+.loading::after {
+    content: "加载中...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #6c757d;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双色球智能预测系统</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">双色球智能预测</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analysis.html">数据分析</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="predict.html">智能预测</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="check.html">中奖查询</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- 最新开奖结果 -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">最新开奖结果</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="latest-result" class="text-center">
+                            <div class="period mb-3">
+                                第 <span id="period">--</span> 期
+                                <span id="draw-date" class="ms-3">----------</span>
+                            </div>
+                            <div class="numbers">
+                                <div class="red-balls mb-3">
+                                    <!-- 红球将通过JavaScript动态添加 -->
+                                </div>
+                                <div class="blue-ball">
+                                    <!-- 蓝球将通过JavaScript动态添加 -->
+                                </div>
+                            </div>
+                            <div class="prize-info mt-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <strong>奖池奖金：</strong>
+                                        <span id="pool-prize">--</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <strong>一等奖：</strong>
+                                        <span id="first-prize-count">--</span>注
+                                        <span id="first-prize-amount">--</span>元
+                                    </div>
+                                    <div class="col-md-4">
+                                        <strong>二等奖：</strong>
+                                        <span id="second-prize-count">--</span>注
+                                        <span id="second-prize-amount">--</span>元
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 基本统计信息 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">号码统计</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="number-stats">
+                            <h6>热门红球</h6>
+                            <div id="hot-red-balls" class="mb-3">
+                                <!-- 热门红球将通过JavaScript动态添加 -->
+                            </div>
+                            <h6>热门蓝球</h6>
+                            <div id="hot-blue-balls">
+                                <!-- 热门蓝球将通过JavaScript动态添加 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 历史开奖记录 -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">历史开奖记录</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>期号</th>
+                                        <th>开奖日期</th>
+                                        <th>开奖号码</th>
+                                        <th>一等奖</th>
+                                        <th>二等奖</th>
+                                        <th>奖池奖金(元)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="history-list">
+                                    <!-- 历史记录将通过JavaScript动态添加 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html> 

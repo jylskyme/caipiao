@@ -1,0 +1,89 @@
+/* 预测选项样式 */
+.prediction-options {
+    margin-bottom: 2rem;
+}
+
+.prediction-options .form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.prediction-options .form-select {
+    cursor: pointer;
+}
+
+/* 预测结果样式 */
+.prediction-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.prediction-item {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.prediction-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.prediction-info {
+    text-align: center;
+    color: #6c757d;
+}
+
+.recommendation-index {
+    font-weight: 600;
+    color: #198754;
+}
+
+/* 历史预测记录样式 */
+.prediction-history th {
+    white-space: nowrap;
+}
+
+.prediction-status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-hit {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-miss {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .prediction-results {
+        grid-template-columns: 1fr;
+    }
+    
+    .prediction-item {
+        padding: 1rem;
+    }
+    
+    .prediction-history {
+        font-size: 14px;
+    }
+}

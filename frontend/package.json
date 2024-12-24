@@ -1,0 +1,17 @@
+{
+  "name": "caipiao-frontend",
+  "version": "1.0.0",
+  "description": "双色球预测系统前端",
+  "scripts": {
+    "dev": "live-server public --port=3000",
+    "lint": "eslint public/js/**/*.js",
+    "build": "echo \"Build process to be configured\""
+  },
+  "dependencies": {
+    "chart.js": "^3.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "live-server": "^1.2.2"
+  }
+}
