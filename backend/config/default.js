@@ -1,6 +1,6 @@
 module.exports = {
     server: {
-        port: process.env.PORT || 3000,
+        port: process.env.PORT || 54321,
         env: process.env.NODE_ENV || 'development'
     },
     
